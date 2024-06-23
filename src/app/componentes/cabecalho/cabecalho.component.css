@@ -1,0 +1,23 @@
+.cabecalho {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	border-bottom: 1px solid rgba(13, 110, 253, 1);
+	padding-bottom: 40px;
+}
+
+.cabecalho .titulo {
+	font-family: 'Zen Dots';
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	color: rgba(13, 110, 253, 1);
+	line-height: 150%;
+	margin: 0;
+}
+
+.cabecalho .titulo span {
+	color: #FD9843;
+}
