@@ -1,23 +1,23 @@
 # 📚 Angular Contact Agenda Project
 
-Bem-vindo ao repositório do **Projeto de Aprendizado em Angular**! 🎉
+Welcome to the **Angular Learning Project** repository! 🎉
 
-## 📋 Descrição
+## 📋 Description
 
-Este projeto foi desenvolvido com o objetivo de aprimorar habilidades em Angular, através da criação de uma tela de agenda de contatos. A aplicação permite:
+This project was developed to enhance Angular skills by creating a contact agenda screen. The application allows:
 
-- 📖 **Busca de Contatos**: Encontre contatos rapidamente utilizando a funcionalidade de busca.
-- 🔠 **Ordenação Alfabética**: Os contatos são exibidos em ordem alfabética para fácil navegação.
+- 📖 **Contact Search**: Quickly find contacts using the search functionality.
+- 🔠 **Alphabetical Order**: Contacts are displayed in alphabetical order for easy navigation.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Interface Intuitiva**: Design simples e fácil de usar, focado na experiência do usuário.
-- **Busca Dinâmica**: Filtre seus contatos em tempo real enquanto digita.
-- **Ordenação Alfabética**: Todos os contatos são automaticamente ordenados para uma navegação eficiente.
+- **Intuitive Interface**: Simple and user-friendly design focused on user experience.
+- **Dynamic Search**: Filter your contacts in real-time as you type.
+- **Alphabetical Ordering**: All contacts are automatically sorted for efficient browsing.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-- **Angular**: Framework principal para o desenvolvimento da aplicação.
-- **TypeScript**: Linguagem de programação utilizada.
-- **HTML & CSS**: Estrutura e estilo da aplicação.
+- **Angular**: The main framework used for application development.
+- **TypeScript**: The programming language used.
+- **HTML & CSS**: For structuring and styling the application.
 
