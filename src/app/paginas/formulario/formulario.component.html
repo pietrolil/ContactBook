@@ -1,0 +1,77 @@
+
+<app-container>
+	<header>
+		<section class="cabecalho-link">
+			<img src="assets/logo.png">
+			<div>
+				<button [routerLink]="['/home']" routerLinkActive="router-link-active" >
+					<img class="seta" src="assets/arrow-left.png">
+					<span>Voltar</span>
+				</button>
+			</div>
+		</section>
+		<section class="cabecalho-contato">
+			<img src="assets/adicionar-contato.png">
+			<h1>Adicionar Contato</h1>
+		</section>
+	</header>
+
+	<form [formGroup]="contatoForm" (ngSubmit)="salvarContato()">
+		<label for="nome">Nome</label>
+		<input type="text" id="nome" placeholder="Digite o nome do contato" formControlName="nome"/>
+
+		@if (contatoForm.get('nome')?.errors && contatoForm.get('nome')?.touched) {
+			<div class="mensagem-erro">
+				Campo Obrigatório
+			</div>
+		}
+
+		<label for="telefone">Telefone</label>
+		<input type="text" id="telefone" placeholder="Digite o telefone do contato" formControlName="telefone"/>
+
+		@if (contatoForm.get('telefone')?.errors && contatoForm.get('telefone')?.touched) {
+			<div class="mensagem-erro">
+				Campo Obrigatório
+			</div>
+		}
+
+		<label for="email">Email</label>
+		<input type="email" id="email" placeholder="Digite o email do contato" formControlName="email"/>
+
+		@if (contatoForm.get('email')?.errors?.['required'] && contatoForm.get('email')?.touched) {
+			<div class="mensagem-erro">
+				Campo Obrigatório
+			</div>
+		}
+
+		@if (contatoForm.get('email')?.errors?.['email'] && contatoForm.get('email')?.touched) {
+			<div class="mensagem-erro">
+				Formato de e-mail inválido
+			</div>
+		}
+
+		<app-separador></app-separador>
+
+		<label for="aniversario">Aniversário</label>
+		<input type="date" id="aniversario" placeholder="Data de Nascimento" formControlName="aniversario"/>
+
+		<label for="redes">Redes Sociais</label>
+		<div class="input-container">
+			<span class="span-http">https://</span>
+			<input type="url" id="redes" placeholder="Adicione a url da pagina" formControlName="redes"/>
+		</div>
+
+		<label for="observacoes">Observações</label>
+		<textarea type="text" id="observacoes" formControlName="observacoes" placeholder="Coloque observações nesse espaço.  Exemplo: “Instrutora da academia “Nova Imagem”, amiga da Júlia”."></textarea>
+
+		<section class="botoes">
+			<button (click)="cancelar()" class="botao-cancelar" type="button">Cancelar</button>
+			<button
+				[disabled]="contatoForm.invalid"
+				[ngClass]="contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'"
+				type="submit">
+				Salvar Contato
+			</button>
+		</section>
+	</form>
+</app-container>
